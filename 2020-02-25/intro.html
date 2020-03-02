@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Berkenalan dengan HTML</title>
+	<style type="text/css">
+		#font-20px{
+			color: red;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		#font-16px{
+			color: blue;
+			font-size: 16px;
+		}
+
+		.padding-10px{
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Judul yang mengawali petualanganku</h1>
+	
+	<p>Sebuah deskripsi yang mendeskripsikan jalanku</p>
+
+	<button>Tombol untuk memulai hariku</button>
+	
+	<h2>Sebuah Afirmasi</h2>
+
+	<hr>
+	<input>
+
+	<ul>
+		<li>Aku bisa</li>
+		<li>Aku bisa</li>
+		<li>Aku bisa</li>
+	</ul>
+
+	<!-- Aku ada di sini, namun kamu tidak bisa melihatku di sana (browser) -->
+
+	<hr> <!-- Sebuah garis kehidupan -->
+
+	<ol>
+		<li>Aku bisa</li>
+		<li>Aku bisa</li>
+		<br><br> <!-- Terkadang terdapat jeda-jeda kehidupan -->
+		<li>Aku bisa</li>
+	</ol>
+
+	<!-- href link-nya menuju kemana -->
+	<!-- title tooltip (muncul saat di hover) -->
+	<!-- target buka halaman baru saat diklik -->
+	<p>
+		Tempat menimba ilmu: <br>
+		<a href="https://ugm.ac.id" title="ugm">Mulai</a>
+		<br>
+		<a href="https://ugm.ac.id" title="ugm" target="_blank">Mulai</a>
+	</p>
+
+	<hr>
+
+	<img src="https://ugm.ac.id/galleries/crop/13137--730x420px.jpeg" alt="Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana">
+
+	<h1>Gambar diambil dari folder lokal</h1>
+	<h2>Gambar diambil dari folder lokal</h2>
+	<h5>Gambar diambil dari folder lokal</h5>
+	<img src="image/ugm.jpeg" title="Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana" alt="Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana">
+
+	<h2>Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana</h2>
+
+	<p>UGM menyelenggarakan Kuliah Perdana Mahasiswa Baru Program Pascasarjana Semester Genap Tahun Akademik 2019/2020, Senin (24/2) di Auditorium Sekolah Pascasarjana UGM. Pada penerimaan mahasiswa kali ini, UGM menerima mahasiswa baru dari <a href="https://ugm.ac.id/id/berita/19065-kuliah-umum-awali-tahun-akademik-baru-program-pascasarjana" title="Baca selengkapnya" target="_blank">[...]</a></p>
+
+	<p>
+		Ini adalah paragraf biasa dan <b>ini dicetak tebal</b>
+	</p>
+	
+	<p>
+		Ini adalah paragraf biasa dan <u>ini dicetak garis bawah</u>
+	</p>
+
+	<p>
+		Ini adalah paragraf biasa dan <i>ini dicetak miring</i>
+	</p>
+
+	<h3>Warna-warna kehidupan</h3>
+
+	<!-- Ctrl + klik -->
+	<!-- Ctrl+Shift+D -->
+	<ul>
+		<li style="color: red">Merah</li>
+		<li style="color: blue">Biru</li>
+		<li style="color: green">Hijau</li>
+		<li style="color: yellow">Kuning</li>
+		<li style="color: #073c64">Kustom</li>
+	</ul>
+
+	<table style="border-collapse: collapse;" border="1">
+		<tr id="font-20px">
+			<th class="padding-10px" rowspan="2">No.</th>
+			<th class="padding-10px" rowspan="2">Nama</th>
+			<th class="padding-10px" rowspan="2">Jabatan</th>
+			<th class="padding-10px" colspan="2">Status</th>
+			<th class="padding-10px" rowspan="2">Aksi</th>
+		</tr>
+
+		<tr id="font-20px">
+			<th class="padding-10px" class="padding-10px">2019</th>
+			<th class="padding-10px" class="padding-10px">2020</th>
+		</tr>
+
+		<tr id="font-16px">
+			<td class="padding-10px">1.</td>
+			<td class="padding-10px">Nanang</td>
+			<td class="padding-10px">Ketua</td>
+			<td class="padding-10px">Duda</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">
+				<button>Edit</button>
+				<button>Delete</button>
+			</td>
+		</tr>
+
+		<tr id="font-16px">
+			<td class="padding-10px">2.</td>
+			<td class="padding-10px">Arif</td>
+			<td class="padding-10px">Wakil</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">
+				<button>Edit</button>
+				<button>Delete</button>
+			</td>
+		</tr>
+	</table>
+
+	<h2>Form Login</h2>
+
+	<form>
+		<h4>
+			Username:<br>
+			<input type="text" placeholder="type username...">
+		</h4>
+
+		<h4>
+			Password:<br>
+			<input type="password" placeholder="type password...">
+		</h4>
+
+		<input type="submit" value="Sign in">
+	</form>
+</body>
+</html>
