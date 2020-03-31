@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<title>Grid System</title>
+</head>
+
+<body style="text-align: center;">
+	<h1>Belajar tentang Grid System di Bootstrap</h1>
+
+	<hr>
+
+	<div class="container">
+		<h3>Ini adalah container</h3>
+
+		<!-- Ukuran kolom dari 1-12 -->
+		<div class="row">
+			<div class="col-6 bg-primary">C1 R1</div>
+			<div class="col-6 bg-warning">C2 R1</div>
+		</div>
+
+		<div class="row">
+			<div class="col-2 bg-success">C1 R2</div>
+			<div class="col-8 bg-light">C2 R2</div>
+			<div class="col-2 bg-info">C3 R2</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4 bg-warning">
+				C1 R3
+				
+				<div class="row">
+					<div class="col-6 bg-danger">
+						C1 R1 di dalam C1 R3
+					</div>
+
+					<div class="col-6 bg-light">
+						C2 R1 di dalam C1 R3
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-6 bg-success">
+						C1 R2 di dalam C1 R3
+					</div>
+
+					<div class="col-6 bg-info">
+						C2 R2 di dalam C1 R3
+					</div>
+				</div>
+			</div>
+			<div class="col-8 bg-primary">C2 R3</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<h5>Menggunakan kelas col-lg-6</h5>
+		<p>Ukuran kolom akan menyesuaikan dengan ukuran layar agar tampilan tetap responsif</p>
+		<div class="row">
+			<div class="col-lg-6 bg-primary">Kolom Pertama</div>
+			<div class="col-lg-6 bg-success">Kolom Kedua</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<p>Di laptop 4 kolom, di hp setengah-setengah (zoom 250%)</p>
+		<div class="row">
+			<div class="col-md-3 col-sm-6 bg-success">Kolom 1</div>
+			<div class="col-md-3 col-sm-6 bg-warning">Kolom 2</div>
+			<div class="col-md-3 col-sm-6 bg-danger">Kolom 3</div>
+			<div class="col-md-3 col-sm-6 bg-primary">Kolom 4</div>
+		</div>
+	</div>
+</body>
+</html>
